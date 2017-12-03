@@ -27,7 +27,7 @@ public class WechatApplicationTests {
 
 	@Test
 	public void contextLoads() throws Exception {
-/*		RequestBuilder request = null;
+/*		RequestBuilder request = null;  asds
 		// 1、get查一下user列表，应该为空
 		request = get("/users/");
 		mvc.perform(request)
