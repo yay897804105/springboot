@@ -1,13 +1,17 @@
 package com.yxj.wechat.mapper;
 
+import com.yxj.wechat.entity.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.context.annotation.Configuration;
 
-@Mapper
+import java.util.List;
+
+
 public interface UserMapper {
 
-    @Insert("insert users(username,password) values(#{username},#{password})")
-    public int insert(@Param("username") String username, @Param("password") String password);
+    public int insertUser(User user);
+
+    public List<User> getAllUsers();
 }
