@@ -14,7 +14,7 @@ public class HelloWorldController {
 
     @RequestMapping("/hello")
     public String hello(){
-        userServiceImpl.insert("yxj","yxj");
+//        userServiceImpl.insert("yxj","yxj");
         return "Hello World YXJ";
     }
 }
